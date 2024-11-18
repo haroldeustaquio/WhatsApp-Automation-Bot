@@ -1,4 +1,4 @@
-# WhatsApp-js-Bot
+# WhatsApp-js-Bot: Message Sender
 
 This project is an automation bot for sending messages and files over WhatsApp using the `whatsapp-web.js` API. The bot scans a QR code to log in, keeps the session active, and sends messages and files periodically to a specific WhatsApp number or group.
 

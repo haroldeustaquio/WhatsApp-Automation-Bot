@@ -1,4 +1,4 @@
-# WhatsApp Automation Bot
+# WhatsApp js Bot
 
 ## Overview
 This repository is focused on automating the process of sending messages and file attachments through WhatsApp. This project use WhatsApp Web for the message delivery mechanism but leverage different tools and approaches for automation. These solutions can be used to send timely alerts based on various triggers, ensuring fast and efficient communication directly through WhatsApp.
