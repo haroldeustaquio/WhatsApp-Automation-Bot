@@ -1,9 +1,35 @@
 # WhatsApp-js-Bot: Message Sender
 
+## Overview
 This project is an automation bot for sending messages and files over WhatsApp using the `whatsapp-web.js` API. The bot scans a QR code to log in, keeps the session active, and sends messages and files periodically to a specific WhatsApp number or group.
 
+**Content:**
+- [Architecture](#architecture)
+- [Functions](#functions)
+    - [whatsapp-client.js](#whatsapp-clientjs)
+    - [sendMessage.js](#sendmessagejs)
+    - [sendFile.js](#sendfilejs)
+    - [keepAlive.js](#keepalivejs)
+- [Installation](#installation)
+- [Usage](#usage)
+
 ---
-## Features
+
+## Architecture
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/903432c8-ace8-4c3d-b9d9-13f9b50213e7" alt="Architecture">
+</p>
+
+
+<div align="center">
+    <em>Figure 1: Architecture of Message Sender</em>
+</div>
+
+---
+
+## Functions
 
 ### `whatsapp-client.js`
 This is the main file that initializes the WhatsApp client. It includes the following functions:
@@ -52,6 +78,10 @@ cd whatsapp-js-bot
 ```
 
 ### 3. Install dependencies:
+- whatsapp-web.js 
+- qrcode-terminal 
+- fs
+
 ```bash
 npm install whatsapp-web.js qrcode-terminal fs
 ```
@@ -76,16 +106,6 @@ Modify the ``whatsapp-client.js`` file with the destination number and the file 
 - File: Change the file path and its name if you want to send a different file.
 - Interval: Change the number of ms to send messages automatically
 
----
-
-## Dependencies 
-- whatsapp-web.js 
-- qrcode-terminal 
-- fs
-
----
-
-## Additional Notes
-
-- If the file does not exist or the path is incorrect, the bot will throw an error indicating that the file was not found.
-- To send messages to a group, replace the number with the group ID in WhatsApp.
+> [!NOTE]
+> If the file does not exist or the path is incorrect, the bot will throw an error indicating that the file was not found.
+> To send messages to a group, replace the number with the group ID in WhatsApp.
