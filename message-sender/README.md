@@ -107,5 +107,5 @@ Modify the ``whatsapp-client.js`` file with the destination number and the file 
 - Interval: Change the number of ms to send messages automatically
 
 > [!NOTE]
-> If the file does not exist or the path is incorrect, the bot will throw an error indicating that the file was not found.
-> To send messages to a group, replace the number with the group ID in WhatsApp.
+> - If the file does not exist or the path is incorrect, the bot will throw an error indicating that the file was not found.
+> - To send messages to a group, replace the number with the group ID in WhatsApp.
