@@ -9,10 +9,10 @@ const client = new Client({
     authStrategy: new LocalAuth()
 });
 
-const number = '51973434110@c.us'; // Hacer prueba con num, luego pasar a grupo
+const number = 'xxxxxxxxxx@c.us'; // Hacer prueba con num, luego pasar a grupo
 
 
-const message = 'hola hola';
+const message = "hola";
 const filePath = './prueba.txt'; // Cambiar ubicación del archivo
 const fileName = ''; // Nombre del archivo
 
