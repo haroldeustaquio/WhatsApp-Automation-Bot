@@ -1,7 +1,7 @@
 const fs = require('fs');
 const qrcode = require('qrcode-terminal');
 const { Client, LocalAuth } = require('whatsapp-web.js');
-const sendMessage = require('../message-monitor/sendMessage');
+const sendMessage = require('../message-sender/sendMessage');
 const sendFile = require('./sendFile');
 const keepAlive = require('./keepAlive');
 
@@ -9,7 +9,7 @@ const client = new Client({
     authStrategy: new LocalAuth()
 });
 
-const number = '51973434110@c.us'; // Hacer prueba con num, luego pasar a grupo
+const number = 'insert-number@c.us'; // Hacer prueba con num, luego pasar a grupo
 
 
 const message = "hola";
