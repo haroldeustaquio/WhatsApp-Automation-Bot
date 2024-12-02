@@ -17,7 +17,7 @@ This repository is focused on automating and monitoring the process of sending m
 
 ## Message Sender
 
-The `Message Sender` script automates the sending of messages and files through WhatsApp. It is designed for scenarios requiring periodic updates or alerts to specific numbers or groups.
+The **`Message Sender`** script automates the sending of messages and files through WhatsApp. It is designed for scenarios requiring periodic updates or alerts to specific numbers or groups.
 
 ### Key Features
 - **QR Code Login**: Authenticate using WhatsApp Web by scanning a QR code.
@@ -25,16 +25,16 @@ The `Message Sender` script automates the sending of messages and files through 
 - **Session Keep Alive**: Uses a keep-alive mechanism to prevent session timeouts during prolonged use.
 
 ### File Structure
-- **whatsapp-client.js**: Manages WhatsApp client initialization, QR code authentication, and triggers periodic sending of messages and files.
-- **sendMessage.js**: Contains the function for sending text messages to a WhatsApp number.
-- **sendFile.js**: Handles file attachments to be sent to a specific number or group.
-- **keepAlive.js**: Keeps the session active by periodically logging the connection status.
+- **``whatsapp-client.js``**: Manages WhatsApp client initialization, QR code authentication, and triggers periodic sending of messages and files.
+- **``sendMessage.js``**: Contains the function for sending text messages to a WhatsApp number.
+- **``sendFile.js``**: Handles file attachments to be sent to a specific number or group.
+- **``keepAlive.js``**: Keeps the session active by periodically logging the connection status.
 
 ---
 
 ## Message Monitor
 
-The `Message Monitor` script tracks messages sent by the `Message Sender` to ensure they are delivered on time. It validates timing against predefined intervals and tolerances.
+The **`Message Monitor`** script tracks messages sent by the **`Message Sender`** to ensure they are delivered on time. It validates timing against predefined intervals and tolerances.
 
 ### Key Features
 - **Real-Time Monitoring**: Tracks outgoing messages to the target number in real time.
@@ -44,9 +44,9 @@ The `Message Monitor` script tracks messages sent by the `Message Sender` to ens
 - **Session Management**: Ensures continuous operation by keeping the session active.
 
 ### File Structure
-- **whatsapp-monitor.js**: Initializes the WhatsApp client and implements message tracking based on intervals and tolerances.
-- **sendMessage.js**: Sends alert messages for missed or late messages.
-- **keepAlive.js**: Maintains session stability during monitoring.
+- **``whatsapp-monitor.js``**: Initializes the WhatsApp client and implements message tracking based on intervals and tolerances.
+- **``sendMessage.js``**: Sends alert messages for missed or late messages.
+- **``keepAlive.js``**: Maintains session stability during monitoring.
 
 ---
 

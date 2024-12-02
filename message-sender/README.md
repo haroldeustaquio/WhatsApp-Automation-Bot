@@ -31,31 +31,31 @@
 
 ## Usage
 
-* **Initialization:**
+* **Initialization**
 
   - The script initializes the WhatsApp client using the `whatsapp-web.js` API.
   - Generates a QR code that must be scanned with the WhatsApp app to log in.
   - Once logged in, it keeps the session active using the `keepAlive` module.
 
-* **Automated Sending:**
+* **Automated Sending**
 
-  - **Text Messages**:
+  - **Text Messages**
     - Sends a predefined text message to the specified target number or group.
     - The message content can be customized by modifying the `message` variable.
 
-  - **File Sending**:
+  - **File Sending**
     - Attaches and sends a file to the same target number or group.
     - Both the file path (`filePath`) and file name (`fileName`) must be configured.
 
-  - **Interval Execution**:
+  - **Interval Execution**
     - Messages and files are sent automatically at regular intervals defined by the `interval` variable (default: 60000 ms or 1 minute).
 
 
 > [!NOTE]
-> - ``Number``: You must use the format ``51XXXXXXXXX@c.us`` for numbers in Peru (+51).
-> - ``Message``: You can customize the text message to send.
-> - ``File``: Change the file path and its name if you want to send a different file.
-> - ``Interval``: Change the number of ms to send messages automatically
+> - **``Number``**: You must use the format ``51XXXXXXXXX@c.us`` for numbers in Peru (+51).
+> - **``Message``**: You can customize the text message to send.
+> - **``File``**: Change the file path and its name if you want to send a different file.
+> - **``Interval``**: Change the number of ms to send messages automatically
 
 ---
 
@@ -74,18 +74,18 @@ This is the main file that initializes the WhatsApp client. It includes the foll
 This file exports a function that sends a text message to a WhatsApp number:
 
 **Parameters**:
-- `client`: Instance of the WhatsApp client.
-- `number`: WhatsApp number (in `51XXXXXXXXX@c.us` format).
-- `message`: The text of the message to send.
+- **`client`**: Instance of the WhatsApp client.
+- **`number`**: WhatsApp number (in `51XXXXXXXXX@c.us` format).
+- **`message`**: The text of the message to send.
 
 ### `sendFile.js`
 This file exports a function that sends a file to a WhatsApp number:
 
 **Parameters**:
-- `client`: WhatsApp client instance.
-- `number`: WhatsApp number (in `51XXXXXXXXX@c.us` format).
-- `filePath`: Local path of the file to be sent.
-- `fileName`: Name of the file to display on WhatsApp.
+- **`client`**: WhatsApp client instance.
+- **`number`**: WhatsApp number (in `51XXXXXXXXX@c.us` format).
+- **`filePath`**: Local path of the file to be sent.
+- **`fileName`**: Name of the file to display on WhatsApp.
 
 ### `keepAlive.js`
 This file exports a function that keeps the WhatsApp session active:
